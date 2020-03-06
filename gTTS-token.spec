@@ -4,7 +4,7 @@
 #
 Name     : gTTS-token
 Version  : 1.1.3
-Release  : 9
+Release  : 10
 URL      : https://files.pythonhosted.org/packages/e7/25/ca6e9cd3275bfc3097fe6b06cc31db6d3dfaf32e032e0f73fead9c9a03ce/gTTS-token-1.1.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e7/25/ca6e9cd3275bfc3097fe6b06cc31db6d3dfaf32e032e0f73fead9c9a03ce/gTTS-token-1.1.3.tar.gz
 Summary  : Calculates a token to run the Google Translate text to speech
@@ -18,22 +18,7 @@ BuildRequires : buildreq-distutils3
 BuildRequires : requests
 
 %description
-gTTS-token
 ====
-
-**gTTS-token** (Google Text to Speech token): A python implementation of the token validation of Google Translate
-
-[![Build Status](https://travis-ci.org/Boudewijn26/gTTS-token.svg?branch=master)](https://travis-ci.org/Boudewijn26/gTTS-token)
-
-Install
--------
-
-    pip install gTTS-token
-
-Description
--------
-
-Google Translate requires a tk param when making a request to its translate API. This project provides an implementation for that algorithm in Python.
 
 %package license
 Summary: license components for the gTTS-token package.
@@ -57,7 +42,8 @@ python components for the gTTS-token package.
 Summary: python3 components for the gTTS-token package.
 Group: Default
 Requires: python3-core
-Provides: pypi(gTTS-token)
+Provides: pypi(gtts_token)
+Requires: pypi(requests)
 
 %description python3
 python3 components for the gTTS-token package.
@@ -72,8 +58,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582933711
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583519005
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
