@@ -4,7 +4,7 @@
 #
 Name     : gTTS-token
 Version  : 1.1.4
-Release  : 24
+Release  : 25
 URL      : https://files.pythonhosted.org/packages/78/b4/e2306352c5b5d777c9d39cbf17f21b10be40cbe7271329473d424700aa41/gTTS-token-1.1.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/78/b4/e2306352c5b5d777c9d39cbf17f21b10be40cbe7271329473d424700aa41/gTTS-token-1.1.4.tar.gz
 Summary  : Calculates a token to run the Google Translate text to speech
@@ -58,7 +58,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1604971730
+export SOURCE_DATE_EPOCH=1635738327
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
